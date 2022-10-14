@@ -11,11 +11,13 @@ export class FriendViewComponent implements OnInit {
   constructor(private api:ApiService) {
     this.fetch()
    }
-
+status:boolean=false
 fetch=()=>{
   this.api.view().subscribe(
     (data)=>this.Data=data
+  
   )
+  this.status=true
 }
 
 

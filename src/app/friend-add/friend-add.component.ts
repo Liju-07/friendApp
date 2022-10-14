@@ -24,9 +24,10 @@ read=()=>{
     
  "name":this.name,
   "friendName":this.friendName,
-  "friendNickName":this.friendName,
+  "friendNickName":this.friendNickName,
   "DescribeYourFriend":this.DescribeYourFriend
   }
+  console.log(data)
   this.api.add(data).subscribe(
     (response:any)=>{
       alert("Added Successfully")
